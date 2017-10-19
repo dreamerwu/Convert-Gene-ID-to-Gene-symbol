@@ -8,7 +8,7 @@ write.csv(result,"~/xxxxxx")
 
 
 
-#Step 2. the data are sorted by ID, so same IDs are near to each other
+#Step 2. the data are sorted by ID, so same IDs are near to each other. the following code is used to remove duplicates
 data=read.delim("D:/demo/demo.txt",head=T,sep="\t")
 matrix=matrix(,ncol=8,nrow=(nrow(data)/2))
 data2=as.matrix(data)
